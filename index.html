@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>Cookie Empire</title>
+	<link rel="stylesheet" type="text/css" href="interface.css" />
+</head>
+
+<body>
+	<h2>Cookies: <span id="cookies">0</span></h2>
+	<h2>Cash: $<span id="cash">0<span></h2>
+	<h4>Total cookies: <span id="totalCookies">0</span></h4>
+	<h4>Automated production: <span id="totalProduction">0</span> cookies per second</h4>
+	<h4>Automated sales: $<span id="totalSales">0</span> per second</h4>
+
+<hr>
+	<button onclick="saveGame()">Save Game</button>
+	<button onclick="loadGame()">Load Game</button>
+
+<hr>
+	<button onclick="cookieClick(1)">Make Cookie!</button>
+	<button onclick="sellCookie(1)">Sell Cookie!</button>
+
+<hr>
+<h4>Sales</h4>
+	
+	<div id="girlScoutsDiv">
+	<p><button onclick="buyGirlScout()">Hire Girl Scout</button></p>
+	Girl Scouts: <span id="girlScouts">0</span><br />
+	Girl Scout cost: <span id="girlScoutCost">20</span> cookies.<br />
+	</p>
+	</div>
+
+	<div id="cookiePacksDiv">
+	<p><button onclick="buyCookiePack()">Produce Cookie Pack</button></p>
+	Cookie Pack: <span id="cookiePacks">0</span><br />
+	Cookie Pack cost: $<span id="cookiePackCost">20</span><br />
+	</p>
+	</div>
+
+        <div id="cookieCratesDiv">
+        <p><button onclick="buyCookieCrate()">Produce Cookie Crate</button></p>
+        Cookie Crate: <span id="cookieCrates">0</span><br />
+        Cookie Crate cost: $<span id="cookieCrateCost">50</span><br />
+        </p>
+        </div>
+
+<hr>
+<h4>Production</h4>
+
+	<div id="cookieMachinesDiv">
+	<p><button onclick="buyCookieMachine()">Buy Cookie Machine</button></p>
+	<p>
+	Cookie Machines: <span id="cookiemachines">0</span><br />
+	Cookie Machine cost: $<span id="cookieMachineCost">100</span>
+	</p>
+	</div>
+
+        <div id="smallFactoriessDiv">
+        <p><button onclick="buySmallFactory()">Buy Small Factory</button></p>
+        <p>
+        Small Factory: <span id="smallFactories">0</span><br />
+        Small Factory cost: $<span id="smallFactoryCost">1000</span>
+        </p>
+        </div>
+
+        <div id="mediumFactoriessDiv">
+        <p><button onclick="buyMediumFactory()">Buy Medium Factory</button></p>
+        <p>
+        Medium Factory: <span id="mediumFactories">0</span><br />
+        Medium Factory cost: $<span id="mediumFactoryCost">3000</span>
+        </p>
+        </div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
