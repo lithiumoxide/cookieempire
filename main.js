@@ -46,7 +46,7 @@ function cookieClick(number){
 };
 
 function sellCookie(number){
-	if(number>cookies){
+	if(cookies > number){
 		cash = cash + (cookieCost);
 		cookies = cookies - number;
 		document.getElementById('cash').innerHTML = cash;
@@ -56,7 +56,7 @@ function sellCookie(number){
 };
 
 function autoSellCookie(number){
-	if(cookies > 1){
+	if(cookies > number){
 		cash = cash + (number * cookieCost);
 		cookies = cookies - number;
 	        document.getElementById('cash').innerHTML = cash;
